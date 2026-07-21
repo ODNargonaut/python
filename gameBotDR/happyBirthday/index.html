@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+      button {cursor: pointer;}
+      textarea {resize: none;}
+    </style>
+  </head>
+  <body>
+    <div id="blockHint">
+      <h4>Введите строку:</h4>
+      <input id="answer" type="text" placeholder="Ваш ответ.." />
+      <button onclick="hint()">Подтвердить</button>
+      <br />
+      <span id="err" style="color: red; display: none;">Неверный ответ!</span>
+    </div>
+    <div id="blockEnDET" style="display: none;">
+      <h1>С днем рождения!</h1>
+    </div>
+    <script type="text/javascript">
+      HINT = "капитан немо";  // символ разделитель
+      function id(s) { return document.getElementById(s); }
+    </script>
+    <script type="text/javascript" src="./hint.js"></script>
+  </body>
+</html>
